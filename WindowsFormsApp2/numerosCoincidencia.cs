@@ -23,14 +23,11 @@ namespace WindowsFormsApp2
                 {
                    numeros.Add(num);
                 }
-                
             } 
-            indice = numeros.Count-1;
+            indice = numeros.Count;
             for(int i = 0; i < indice; i++)
             {
-                if (numeros[i] == numero) {
-                    numeros.RemoveAt(i);
-                }
+               numeros.Remove(numero);
             }
             indice = numeros.Count;
             d.Columns.Clear();
@@ -42,11 +39,7 @@ namespace WindowsFormsApp2
             {
                 d.Rows[0].Cells[i].Value = numeros[i].ToString();
             }
-
         }
 
-
-        
-     
     }
 }

@@ -35,16 +35,6 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void dgvNumeros_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void lbemote_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             int numero;

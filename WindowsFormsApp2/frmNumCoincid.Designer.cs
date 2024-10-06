@@ -42,7 +42,6 @@
             this.dgvNumeros.Name = "dgvNumeros";
             this.dgvNumeros.Size = new System.Drawing.Size(579, 98);
             this.dgvNumeros.TabIndex = 0;
-            this.dgvNumeros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNumeros_CellContentClick);
             this.dgvNumeros.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNumeros_CellEndEdit);
             // 
             // lbemote
@@ -54,7 +53,7 @@
             this.lbemote.Size = new System.Drawing.Size(585, 24);
             this.lbemote.TabIndex = 1;
             this.lbemote.Text = "Ingrese el Numero a Eliminar(se eleminaran todas las coincidencias)";
-            this.lbemote.Click += new System.EventHandler(this.lbemote_Click);
+          
             // 
             // button1
             // 
