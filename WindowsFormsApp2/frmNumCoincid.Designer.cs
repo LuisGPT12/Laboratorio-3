@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtBoxNum = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnReiniciar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNumeros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,12 +92,24 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "(se eleminaran todas las coincidencias)";
             // 
+            // btnReiniciar
+            // 
+            this.btnReiniciar.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReiniciar.Location = new System.Drawing.Point(635, 384);
+            this.btnReiniciar.Name = "btnReiniciar";
+            this.btnReiniciar.Size = new System.Drawing.Size(138, 36);
+            this.btnReiniciar.TabIndex = 5;
+            this.btnReiniciar.Text = "Reiniciar";
+            this.btnReiniciar.UseVisualStyleBackColor = false;
+            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
+            // 
             // frmNumCoincid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReiniciar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBoxNum);
             this.Controls.Add(this.button1);
@@ -118,5 +131,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtBoxNum;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReiniciar;
     }
 }
