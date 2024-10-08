@@ -18,6 +18,7 @@ namespace WindowsFormsApp2
         {
             this.nombreClient = nombreClient.Trim();
             this.saldo = montoInicial;
+            this.movimientos.Add(montoInicial);
         }
 
         public void deposito(double monto)
@@ -34,7 +35,7 @@ namespace WindowsFormsApp2
         {
             if (saldo >= monto)
             {
-                this.movimientos.Add(monto);
+                this.movimientos.Add(monto * -1);
                 this.saldo -= monto;
                 return true;
             }

@@ -111,7 +111,7 @@
             // 
             this.lblSaldo.AutoSize = true;
             this.lblSaldo.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaldo.Location = new System.Drawing.Point(351, 59);
+            this.lblSaldo.Location = new System.Drawing.Point(340, 59);
             this.lblSaldo.Name = "lblSaldo";
             this.lblSaldo.Size = new System.Drawing.Size(36, 19);
             this.lblSaldo.TabIndex = 5;
@@ -201,6 +201,7 @@
             this.chkRetiro.TabIndex = 1;
             this.chkRetiro.Text = "Retiro";
             this.chkRetiro.UseVisualStyleBackColor = true;
+            this.chkRetiro.CheckedChanged += new System.EventHandler(this.chkRetiro_CheckedChanged);
             // 
             // chkDep
             // 
@@ -212,6 +213,7 @@
             this.chkDep.TabIndex = 0;
             this.chkDep.Text = "Depósito";
             this.chkDep.UseVisualStyleBackColor = true;
+            this.chkDep.CheckedChanged += new System.EventHandler(this.chkDep_CheckedChanged);
             // 
             // grpCrear
             // 
