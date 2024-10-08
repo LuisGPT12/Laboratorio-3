@@ -23,22 +23,22 @@ namespace WindowsFormsApp2
 
         public List<Double> filtrarImportes()
         {
-            List<double> impFli = new List<double>();
+            List<double> resultFiltrado = new List<double>();
 
             for (int i=0;  i < importes.Count; i++)
             {
                 if (importes[i] >=50 && importes[i] <= 287)
                 {
-                    impFli.Add(importes[i]);
+                    resultFiltrado.Add(importes[i]);
                 }
             }
-            impFli.Sort();
-            if (impFli.Count == 0)
+            resultFiltrado.Sort();
+            if (resultFiltrado.Count == 0)
             {
                 MessageBox.Show("No hay datos registrados de Importes Mayores a 58 y Menores 287", "¡Aviso!"
                     , MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            return impFli;
+            return resultFiltrado;
         }
 
         public double get(int posicion)
