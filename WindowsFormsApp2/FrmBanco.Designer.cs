@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBanco));
             this.panel1 = new System.Windows.Forms.Panel();
             this.grpClienteActual = new System.Windows.Forms.GroupBox();
             this.lblCliente = new System.Windows.Forms.Label();
@@ -59,6 +60,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.grpClienteActual);
             this.panel1.Controls.Add(this.grpDetalles);
             this.panel1.Controls.Add(this.grpTipoTransac);
@@ -71,7 +73,7 @@
             // grpClienteActual
             // 
             this.grpClienteActual.Controls.Add(this.lblCliente);
-            this.grpClienteActual.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Italic);
+            this.grpClienteActual.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpClienteActual.ForeColor = System.Drawing.SystemColors.Control;
             this.grpClienteActual.Location = new System.Drawing.Point(3, 271);
             this.grpClienteActual.Name = "grpClienteActual";
@@ -98,7 +100,7 @@
             this.grpDetalles.Controls.Add(this.lblRetiros);
             this.grpDetalles.Controls.Add(this.lstDep);
             this.grpDetalles.Controls.Add(this.lstRetiros);
-            this.grpDetalles.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Italic);
+            this.grpDetalles.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDetalles.ForeColor = System.Drawing.SystemColors.Control;
             this.grpDetalles.Location = new System.Drawing.Point(333, 75);
             this.grpDetalles.Name = "grpDetalles";
@@ -150,19 +152,19 @@
             // lstDep
             // 
             this.lstDep.FormattingEnabled = true;
-            this.lstDep.ItemHeight = 18;
+            this.lstDep.ItemHeight = 20;
             this.lstDep.Location = new System.Drawing.Point(188, 59);
             this.lstDep.Name = "lstDep";
-            this.lstDep.Size = new System.Drawing.Size(132, 202);
+            this.lstDep.Size = new System.Drawing.Size(132, 184);
             this.lstDep.TabIndex = 1;
             // 
             // lstRetiros
             // 
             this.lstRetiros.FormattingEnabled = true;
-            this.lstRetiros.ItemHeight = 18;
+            this.lstRetiros.ItemHeight = 20;
             this.lstRetiros.Location = new System.Drawing.Point(26, 59);
             this.lstRetiros.Name = "lstRetiros";
-            this.lstRetiros.Size = new System.Drawing.Size(132, 202);
+            this.lstRetiros.Size = new System.Drawing.Size(132, 184);
             this.lstRetiros.TabIndex = 0;
             // 
             // grpTipoTransac
@@ -170,7 +172,7 @@
             this.grpTipoTransac.Controls.Add(this.btnTransaction);
             this.grpTipoTransac.Controls.Add(this.chkRetiro);
             this.grpTipoTransac.Controls.Add(this.chkDep);
-            this.grpTipoTransac.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Italic);
+            this.grpTipoTransac.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpTipoTransac.ForeColor = System.Drawing.SystemColors.Control;
             this.grpTipoTransac.Location = new System.Drawing.Point(333, 8);
             this.grpTipoTransac.Name = "grpTipoTransac";
@@ -222,7 +224,7 @@
             this.grpCrear.Controls.Add(this.label1);
             this.grpCrear.Controls.Add(this.txtNombreCliente);
             this.grpCrear.Controls.Add(this.lblNombre);
-            this.grpCrear.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Italic);
+            this.grpCrear.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCrear.ForeColor = System.Drawing.SystemColors.Control;
             this.grpCrear.Location = new System.Drawing.Point(3, 8);
             this.grpCrear.Name = "grpCrear";
@@ -283,6 +285,7 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.Control;
             this.lblTitulo.Location = new System.Drawing.Point(259, 18);
@@ -307,6 +310,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblTitulo);

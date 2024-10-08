@@ -48,6 +48,7 @@
             this.dgvNumeros.AllowUserToResizeRows = false;
             this.dgvNumeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNumeros.ColumnHeadersVisible = false;
+            this.dgvNumeros.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.dgvNumeros.Location = new System.Drawing.Point(55, 41);
             this.dgvNumeros.Name = "dgvNumeros";
             this.dgvNumeros.RowHeadersVisible = false;
@@ -70,6 +71,7 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(333, 273);
             this.button1.Name = "button1";
@@ -102,6 +104,7 @@
             // 
             // btnReiniciar
             // 
+            this.btnReiniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReiniciar.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReiniciar.Location = new System.Drawing.Point(628, 273);
             this.btnReiniciar.Name = "btnReiniciar";

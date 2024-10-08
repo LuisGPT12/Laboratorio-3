@@ -32,9 +32,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtmFiltrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.DgvImports = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvImports)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -42,54 +42,54 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.textBox1.Name = "textBox1";
-            this.textBox1.UseWaitCursor = true;
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Name = "label1";
-            this.label1.UseWaitCursor = true;
             // 
             // BtmFiltrar
             // 
+            this.BtmFiltrar.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.BtmFiltrar, "BtmFiltrar");
             this.BtmFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BtmFiltrar.Name = "BtmFiltrar";
             this.BtmFiltrar.UseVisualStyleBackColor = true;
-            this.BtmFiltrar.UseWaitCursor = true;
             this.BtmFiltrar.Click += new System.EventHandler(this.BtmFiltrar_Click);
-            // 
-            // DgvImports
-            // 
-            this.DgvImports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvImports.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            resources.ApplyResources(this.DgvImports, "DgvImports");
-            this.DgvImports.Name = "DgvImports";
-            this.DgvImports.UseWaitCursor = true;
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.DgvImports);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.BtmFiltrar);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.panel1.Name = "panel1";
-            this.panel1.UseWaitCursor = true;
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.button1, "button1");
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // DgvImports
+            // 
+            this.DgvImports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvImports.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.DgvImports, "DgvImports");
+            this.DgvImports.Name = "DgvImports";
+            this.DgvImports.ReadOnly = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.DgvImports);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.BtmFiltrar);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
             // 
             // FrmImportes
             // 
@@ -99,10 +99,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmImportes";
-            this.UseWaitCursor = true;
             ((System.ComponentModel.ISupportInitialize)(this.DgvImports)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -115,8 +114,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtmFiltrar;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView DgvImports;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
     }
 }

@@ -11,7 +11,7 @@ namespace WindowsFormsApp2
 {
     public partial class FrmImportes : Form
     {
-        private FiltrarImportes fli = new FiltrarImportes();
+        private FiltrarImp fli = new FiltrarImp();
         public FrmImportes()
         {
             InitializeComponent();

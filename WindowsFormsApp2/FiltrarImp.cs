@@ -7,10 +7,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    internal class FiltrarImportes
+    internal class FiltrarImp
     {
         private List<Double> importes = new List<Double>();
-        
+
         public void asignar(Double imp)
         {
             importes.Add(imp);
@@ -25,9 +25,9 @@ namespace WindowsFormsApp2
         {
             List<double> resultFiltrado = new List<double>();
 
-            for (int i=0;  i < importes.Count; i++)
+            for (int i = 0; i < importes.Count; i++)
             {
-                if (importes[i] >=50 && importes[i] <= 287)
+                if (importes[i] >= 50 && importes[i] <= 287)
                 {
                     resultFiltrado.Add(importes[i]);
                 }
