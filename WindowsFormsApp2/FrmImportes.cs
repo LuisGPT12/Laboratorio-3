@@ -18,10 +18,10 @@ namespace WindowsFormsApp2
         }
         private void BtmFiltrar_Click(object sender, EventArgs e)
         {          
-            if (fli.validarL())
+            if (fli.validarMinimo())
             {
                 // Obtener los importes filtrados
-                var importesFiltrados = fli.filtrarImp();
+                var importesFiltrados = fli.filtrarImportes();
 
                 // Asignar la lista filtrada al DataGridView
                 DgvImports.DataSource = importesFiltrados
@@ -32,7 +32,6 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show("Disculpe, pero aún no se han insertado suficientes datos. El mínimo es 5.",
                     "¡¡¡¡¡¡¡¡¡¡ERRORRRRRRRRR!!!!!!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
             }
         }
 
@@ -43,7 +42,6 @@ namespace WindowsFormsApp2
             {               
                 fli.asignar(datoImpo);
                 textBox1.Clear();
-
             }
             else
             {

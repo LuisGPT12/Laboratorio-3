@@ -15,12 +15,13 @@ namespace WindowsFormsApp2
         {
             importes.Add(imp);
         }
-        public Boolean validarL()
+
+        public Boolean validarMinimo()
         {
             return importes.Count >= 5;
         }
 
-        public List<Double> filtrarImp()
+        public List<Double> filtrarImportes()
         {
             List<double> impFli = new List<double>();
 
@@ -39,6 +40,7 @@ namespace WindowsFormsApp2
             }
             return impFli;
         }
+
         public double get(int posicion)
         {
             return importes[posicion];

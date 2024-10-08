@@ -8,35 +8,30 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    internal class numerosCoincidencia
+    internal class NumerosCoincidencia
     {
-        List<int> numeros = new List<int>();
+        List<int> numerosList = new List<int>();
         int numero;
 
-
-        public void asignar(DataGridView d, int numero) {
-            int num, cantidad = d.ColumnCount;
-
-            for (int i = 0; i < cantidad; i++)
+        public void asignar(DataGridView data, int numero) {
+            for (int i = 0; i < data.ColumnCount; i++)
             {
-                if (d.Rows[0].Cells[i].Value != null && int.TryParse(Convert.ToString(d.Rows[0].Cells[i].Value), out num))
+                if (data.Rows[0].Cells[i].Value != null && int.TryParse(Convert.ToString(data.Rows[0].Cells[i].Value), out int num))
                 {
-                    numeros.Add(num);
+                    numerosList.Add(num);
                 }
             }
             this.numero = numero;   
         }
 
-        public List<int> eliminarC()
+        public List<int> eliminarCoincidencias()
         {
-            int indice;
-            indice = numeros.Count;
-            for(int i = 0; i < indice; i++)
+            for(int i = 0; i < numerosList.Count; i++)
             {
-               numeros.Remove(numero);
+               numerosList.Remove(numero);
             }
             
-            return numeros;
+            return numerosList;
         }
 
     }

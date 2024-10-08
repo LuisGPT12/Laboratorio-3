@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FiltrarImportes.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmImportes.cs">
       <SubType>Form</SubType>
@@ -71,11 +71,11 @@
     <Compile Include="frmNumCoincid.Designer.cs">
       <DependentUpon>frmNumCoincid.cs</DependentUpon>
     </Compile>
-    <Compile Include="numerosCoincidencia.cs" />
+    <Compile Include="NumerosCoincidencia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBanco.resx">
       <DependentUpon>FrmBanco.cs</DependentUpon>

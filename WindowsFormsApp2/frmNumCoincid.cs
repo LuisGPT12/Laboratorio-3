@@ -28,34 +28,34 @@ namespace WindowsFormsApp2
 
         private void dgvNumeros_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            //toma la ultima posicion para saber si se lleno
-            int ultima = dgvNumeros.ColumnCount - 1;
-            //si la posicion ultima esta llena osea no es null, agrega otra columa para mas datos n
-            if (dgvNumeros.Rows[0].Cells[ultima].Value != null) { 
+            // toma la ultima posicion para saber si se lleno
+            // si la posicion ultima esta llena osea no es null, agrega otra columa para mas datos n
+            if (dgvNumeros.Rows[0].Cells[dgvNumeros.ColumnCount - 1].Value != null) { 
                 dgvNumeros.ColumnCount++;
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int numero,indice;
+            int indice;
             List<int> resultado = new List<int>();
+            NumerosCoincidencia obj = new NumerosCoincidencia();
 
-            if (txtBoxNum != null && int.TryParse(txtBoxNum.Text, out numero))
+            if (txtBoxNum != null && int.TryParse(txtBoxNum.Text, out int numero))
             {
-                numerosCoincidencia obj = new numerosCoincidencia();
                 obj.asignar(dgvNumeros, numero);
-                resultado=obj.eliminarC();
+                resultado=obj.eliminarCoincidencias();
 
                 indice=resultado.Count;
                 dgvNumeros.Columns.Clear();
                 dgvNumeros.Rows.Clear();
                 dgvNumeros.RowCount = 1;
-                dgvNumeros.ColumnCount = indice;
+                dgvNumeros.ColumnCount = indice + 5;
                 for (int i = 0; i < indice; i++)
                 {
                     dgvNumeros.Rows[0].Cells[i].Value = resultado[i].ToString();
                 }
+                txtBoxNum.Text = String.Empty;
             }
             else {
                 MessageBox.Show("ERROR, Ingrese un numero entero, No letra");            

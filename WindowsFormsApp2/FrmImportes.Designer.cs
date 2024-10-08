@@ -53,6 +53,7 @@
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Name = "label1";
+            this.label1.UseWaitCursor = true;
             // 
             // BtmFiltrar
             // 
@@ -60,13 +61,16 @@
             this.BtmFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BtmFiltrar.Name = "BtmFiltrar";
             this.BtmFiltrar.UseVisualStyleBackColor = true;
+            this.BtmFiltrar.UseWaitCursor = true;
             this.BtmFiltrar.Click += new System.EventHandler(this.BtmFiltrar_Click);
             // 
             // DgvImports
             // 
             this.DgvImports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvImports.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             resources.ApplyResources(this.DgvImports, "DgvImports");
             this.DgvImports.Name = "DgvImports";
+            this.DgvImports.UseWaitCursor = true;
             // 
             // panel1
             // 
@@ -74,7 +78,9 @@
             this.panel1.Controls.Add(this.DgvImports);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.BtmFiltrar);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.panel1.Name = "panel1";
+            this.panel1.UseWaitCursor = true;
             // 
             // button1
             // 
@@ -82,6 +88,7 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmImportes
@@ -92,6 +99,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmImportes";
             this.UseWaitCursor = true;
