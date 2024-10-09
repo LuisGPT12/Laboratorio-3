@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MetodosG.cs" />
     <Compile Include="CuentaManagement.cs" />
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>

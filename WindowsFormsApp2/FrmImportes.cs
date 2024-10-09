@@ -20,22 +20,7 @@ namespace WindowsFormsApp2
 
         private void BtmFiltrar_Click(object sender, EventArgs e)
         {
-            // Verificar que hay al menos 5 importes antes de filtrar
-            if (importes.Count >= 5)
-            {
-                // Filtrar importes entre 50 y 287, y ordenarlos
-                var importesFiltrados = importes.Where(i => i >= 50 && i <= 287).OrderBy(i => i).ToList();
-
-                // Asignar la lista filtrada al DataGridView
-                DgvImports.DataSource = importesFiltrados
-                    .Select(i => new { Importe = i })
-                    .ToList();
-            }
-            else
-            {
-                MessageBox.Show("Disculpe, pero aún no se han insertado suficientes datos. El mínimo es 5.",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            MetodosG.flitrar(importes, DgvImports);
         }
 
         private void button1_Click(object sender, EventArgs e)

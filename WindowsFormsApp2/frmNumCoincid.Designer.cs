@@ -136,7 +136,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "frmNumCoincid";
-            this.Text = "frmNumCoincid";
+            this.Text = "Eliminar Numero";
             this.Load += new System.EventHandler(this.frmNumCoincid_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNumeros)).EndInit();
             this.panel1.ResumeLayout(false);
