@@ -11,42 +11,46 @@ namespace WindowsFormsApp2
 {
     public partial class FrmImportes : Form
     {
-        private FiltrarImp fli = new FiltrarImp();
+        private List<double> importes = new List<double>();
+
         public FrmImportes()
         {
             InitializeComponent();
         }
+
         private void BtmFiltrar_Click(object sender, EventArgs e)
-        {          
-            if (fli.validarMinimo())
+        {
+            // Verificar que hay al menos 5 importes antes de filtrar
+            if (importes.Count >= 5)
             {
-                // Obtener los importes filtrados
-                var importesFiltrados = fli.filtrarImportes();
+                // Filtrar importes entre 50 y 287, y ordenarlos
+                var importesFiltrados = importes.Where(i => i >= 50 && i <= 287).OrderBy(i => i).ToList();
 
                 // Asignar la lista filtrada al DataGridView
                 DgvImports.DataSource = importesFiltrados
-                    .Select(i => new { Importe = i }) // Crear objetos anónimos para que el DataGridView los muestre
+                    .Select(i => new { Importe = i })
                     .ToList();
             }
             else
             {
                 MessageBox.Show("Disculpe, pero aún no se han insertado suficientes datos. El mínimo es 5.",
-                    "¡¡¡¡¡¡¡¡¡¡ERRORRRRRRRRR!!!!!!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double datoImpo;        
+            double datoImpo;
             if (double.TryParse(textBox1.Text, out datoImpo))
-            {               
-                fli.asignar(datoImpo);
+            {
+                // Agregar el importe a la lista
+                importes.Add(datoImpo);
                 textBox1.Clear();
             }
             else
             {
-                MessageBox.Show("No puede insertar Letras, Ni dejar Casillas en blanco"
-                    , "¡¡¡¡¡¡¡¡¡¡ERRORRRRRRRRR!!!!!!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No puede insertar letras ni dejar casillas en blanco.",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox1.Clear();
             }
         }
